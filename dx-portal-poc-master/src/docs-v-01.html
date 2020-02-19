@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PAYCONIQ - Documentation</title>
+  <title>Ytel - API Documentation</title>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
     </div>
     <div class="right">
       <select class="version-select" id="version-select">
-        <option value="docs-v-01" selected>Payconicq API</option>
+        <option value="docs-v-01" selected>Ytel API</option>
         <option value="docs-v-02">APIMatic API</option>
       </select>
       <button class="default-btn">
@@ -38,65 +38,102 @@
   <main>
     <noscript> You need to enable JavaScript to run this app. </noscript>
 
+
     <script type="text/javascript">
       var script = document.createElement("script");
-      script.src = "https://dxjs.apimatic.io/static/js/portal.v6.js";
-      script.onload = function () {
+      script.src="https://www.apimatic.io/api/api-entities/FARQ0HuULNUb-2SeEYC8cQtLTdd97caUeHT_aj_qCiR2ArxumeruopVeoHBcMX5E/published-artifacts/portal-script";
+      script.onload = function() {
         APIMaticDevPortal.show({
-          container: 'apimatic-widget',
-          apiKey:
-            'gcfnkJ5if-gOLCV-AfgUAaYhNpmuIvCAKAOhLcfnIhMXDWv0zfKyZZlBtfxr-z4b',
-          baseUrl: 'https://www.apimatic.io',
+          container: "apimatic-widget",
+          portalStyle: "default",
+          codegenApiRoutes: {
+            docsgen: '/api/api-entities/FARQ0HuULNUb-2SeEYC8cQtLTdd97caUeHT_aj_qCiR2ArxumeruopVeoHBcMX5E/published-artifacts/docs-generations/generated-file?template={template}',
+            codegen: '/api/api-entities/FARQ0HuULNUb-2SeEYC8cQtLTdd97caUeHT_aj_qCiR2ArxumeruopVeoHBcMX5E/published-artifacts/code-generations/generated-file?template={template}',
+            transform: '/api/api-entities/FARQ0HuULNUb-2SeEYC8cQtLTdd97caUeHT_aj_qCiR2ArxumeruopVeoHBcMX5E/published-artifacts/transformations/generated-file?format={format}'
+          },
+
+          apiKey: "FARQ0HuULNUb-2SeEYC8cQtLTdd97caUeHT_aj_qCiR2ArxumeruopVeoHBcMX5E",
+          baseUrl: "https://www.apimatic.io",
           enableExport: true,
           renameHttpToRest: false,
           enableConsoleCalls: true,
-          enableSdkDownload: true,
           useProxyForConsoleCalls: true,
           languageSettings: {
-            'docs-http': {},
-            cs_net_standard_lib: {
-              // disableSdkDownload:  true
-            },
-            java_gradle_android_lib: {
-              // disableSdkDownload:  true
-            },
-            objc_cocoa_touch_ios_lib: {
-              sdkDownloadLink: 'https://www.apimatic.io'
-            },
-            java_eclipse_jre_lib: {},
-            php_generic_lib: {},
-            python_generic_lib: {
-              sdkDownloadLink: 'https://www.apimatic.io',
-              // disableSdkDownload:  true
-            },
-            ruby_generic_lib: {},
-            angular_javascript_lib: {},
-            node_javascript_lib: {
-              // disableSdkDownload:  true
-            },
-            go_generic_lib: {}
-          },
-
-          themeOverrides: {
-            themeType: 'cool',
-            palette: {
-              primaryColor: '#ff4785'
+            "http_curl_v1": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
             }
+            ,
+            "cs_net_standard_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "cs_universal_windows_platform_lib": {
+              disableSdkDownload: false
+            }
+            ,
+            "cs_portable_net_lib": {
+              disableSdkDownload: false
+            }
+            ,
+            "java_gradle_android_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "objc_cocoa_touch_ios_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "java_eclipse_jre_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "php_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "python_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "ruby_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "angular_javascript_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "node_javascript_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "go_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+
           },
-          codegenApiRoutes: {
-            docsgen:
-              '/api/api-entities/{apikey}/published-artifacts/docs-generations/generated-file?template={template}',
-            codegen:
-              '/api/api-entities/{apikey}/published-artifacts/code-generations/generated-file?template={template}',
-            transform:
-              '/api/api-entities/{apikey}/published-artifacts/transformations/generated-file?format={format}',
-            apiProxy: 'https://apimatic-proxy.azurewebsites.net/api/proxy'
+          themeOverrides: {
+            themeType: "cool",
+            palette:{
+              primaryColor:"#2981d2"
+            }
           }
         });
       };
       document.getElementsByTagName("head")[0].appendChild(script);
     </script>
-    <div id="apimatic-widget"></div>
+    <div id="apimatic-widget" style="height: 100%; width: 100%;"></div>
   </main>
 </body>
 </html>

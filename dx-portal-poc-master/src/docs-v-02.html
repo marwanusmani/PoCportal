@@ -38,6 +38,7 @@
   <main>
     <noscript> You need to enable JavaScript to run this app. </noscript>
 
+
     <script type="text/javascript">
       var script = document.createElement("script");
       script.src = "https://dxjs.apimatic.io/static/js/portal.v6.js";
@@ -45,7 +46,7 @@
         APIMaticDevPortal.show({
           container: 'apimatic-widget',
           apiKey:
-            '8bt0WJD4Z596xsB-lb8SOFP3_8Bn-CogpXvH-qmH_tm9oskmoA4l5OLXTVfWp9mlGit8boeeJtwOuMHWAhCXIA**',
+                  'gcfnkJ5if-gOLCV-AfgUAaYhNpmuIvCAKAOhLcfnIhMXDWv0zfKyZZlBtfxr-z4b',
           baseUrl: 'https://www.apimatic.io',
           enableExport: true,
           renameHttpToRest: false,
@@ -80,16 +81,16 @@
           themeOverrides: {
             themeType: 'cool',
             palette: {
-              primaryColor: '#ff4785'
+              primaryColor: '#011CFC'
             }
           },
           codegenApiRoutes: {
             docsgen:
-              '/api/api-entities/{apikey}/published-artifacts/docs-generations/generated-file?template={template}',
+                    '/api/api-entities/{apikey}/published-artifacts/docs-generations/generated-file?template={template}',
             codegen:
-              '/api/api-entities/{apikey}/published-artifacts/code-generations/generated-file?template={template}',
+                    '/api/api-entities/{apikey}/published-artifacts/code-generations/generated-file?template={template}',
             transform:
-              '/api/api-entities/{apikey}/published-artifacts/transformations/generated-file?format={format}',
+                    '/api/api-entities/{apikey}/published-artifacts/transformations/generated-file?format={format}',
             apiProxy: 'https://apimatic-proxy.azurewebsites.net/api/proxy'
           }
         });
@@ -97,6 +98,7 @@
       document.getElementsByTagName("head")[0].appendChild(script);
     </script>
     <div id="apimatic-widget"></div>
+
   </main>
 </body>
 </html>

@@ -37,65 +37,98 @@
   <main>
     <noscript> You need to enable JavaScript to run this app. </noscript>
 
+
     <script type="text/javascript">
       var script = document.createElement("script");
-      script.src = "https://heuristic-pasteur-ac6ade.netlify.com/static/js/portal.v7.js";
-      script.onload = function () {
+      script.src="https://www.apimatic.io/api/api-entities/IJt6KSX8DsZ7zG62WC5QTQJLRYWWC4vdtc4gQiyvYLEwlHyAwaz0eKaryruOj95c/published-artifacts/portal-script";
+      script.onload = function() {
         APIMaticDevPortal.show({
-          container: 'apimatic-widget',
-          apiKey:
-            'TIUfXY9MhvF_iflC3HuYBtYeWq4wg4v73N0yp_VOB2JMQecLH_dmJj3D88c5VkUI',
-          baseUrl: 'https://www.apimatic.io',
+          container: "apimatic-widget",
+          portalStyle: "default",
+          codegenApiRoutes: {
+            docsgen: '/api/api-entities/IJt6KSX8DsZ7zG62WC5QTQJLRYWWC4vdtc4gQiyvYLEwlHyAwaz0eKaryruOj95c/published-artifacts/docs-generations/generated-file?template={template}',
+            codegen: '/api/api-entities/IJt6KSX8DsZ7zG62WC5QTQJLRYWWC4vdtc4gQiyvYLEwlHyAwaz0eKaryruOj95c/published-artifacts/code-generations/generated-file?template={template}',
+            transform: '/api/api-entities/IJt6KSX8DsZ7zG62WC5QTQJLRYWWC4vdtc4gQiyvYLEwlHyAwaz0eKaryruOj95c/published-artifacts/transformations/generated-file?format={format}'
+          },
+
+          apiKey: "IJt6KSX8DsZ7zG62WC5QTQJLRYWWC4vdtc4gQiyvYLEwlHyAwaz0eKaryruOj95c",
+          baseUrl: "https://www.apimatic.io",
           enableExport: true,
           renameHttpToRest: false,
           enableConsoleCalls: true,
-          enableSdkDownload: true,
           useProxyForConsoleCalls: true,
           languageSettings: {
-            'docs-http': {},
-            cs_net_standard_lib: {
-              // disableSdkDownload:  true
-            },
-            java_gradle_android_lib: {
-              // disableSdkDownload:  true
-            },
-            objc_cocoa_touch_ios_lib: {
-              sdkDownloadLink: 'https://www.apimatic.io'
-            },
-            java_eclipse_jre_lib: {},
-            php_generic_lib: {},
-            python_generic_lib: {
-              sdkDownloadLink: 'https://www.apimatic.io',
-              // disableSdkDownload:  true
-            },
-            ruby_generic_lib: {},
-            angular_javascript_lib: {},
-            node_javascript_lib: {
-              // disableSdkDownload:  true
-            },
-            go_generic_lib: {}
-          },
-
-          themeOverrides: {
-            themeType: 'cool',
-            palette: {
-              primaryColor: '#ff4785'
+            "http_curl_v1": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
             }
+            ,
+            "cs_net_standard_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "cs_portable_net_lib": {
+              disableSdkDownload: false
+            }
+            ,
+            "java_gradle_android_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "objc_cocoa_touch_ios_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "java_eclipse_jre_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "php_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "python_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "ruby_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "angular_javascript_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "node_javascript_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+            ,
+            "go_generic_lib": {
+              disableSdkDownload: false,
+              sdkDownloadLink:""
+            }
+
           },
-          codegenApiRoutes: {
-            docsgen:
-              '/api/api-entities/{apikey}/published-artifacts/docs-generations/generated-file?template={template}',
-            codegen:
-              '/api/api-entities/{apikey}/published-artifacts/code-generations/generated-file?template={template}',
-            transform:
-              '/api/api-entities/{apikey}/published-artifacts/transformations/generated-file?format={format}',
-            apiProxy: 'https://apimatic-proxy.azurewebsites.net/api/proxy'
+          themeOverrides: {
+            themeType: "cool",
+            palette:{
+              primaryColor:"#18b6f2"
+            }
           }
         });
       };
       document.getElementsByTagName("head")[0].appendChild(script);
     </script>
-    <div id="apimatic-widget"></div>
+    <div id="apimatic-widget" style="height: 100%; width: 100%;"></div>
   </main>
 </body>
 </html>
